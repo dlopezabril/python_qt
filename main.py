@@ -1,9 +1,8 @@
-from PyQt5 import uic
-from PyQt5.QtWidgets import QApplication
+from PyQt5 import QtWidgets, uic
 
 Form, Window = uic.loadUiType("dialog.ui")
 
-app = QApplication([])
+app = QtWidgets.QApplication([])
 window = Window()
 form = Form()
 form.setupUi(window)
