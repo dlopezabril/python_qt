@@ -137,9 +137,9 @@ class Ui_MainWindow(object):
         self.widget_9 = QtWidgets.QWidget(self.centralwidget)
         self.widget_9.setObjectName("widget_9")
         self.horizontalLayout_8.addWidget(self.widget_9)
-        self.start_button = QtWidgets.QPushButton(self.centralwidget)
-        self.start_button.setObjectName("start_button")
-        self.horizontalLayout_8.addWidget(self.start_button)
+        self.login_button = QtWidgets.QPushButton(self.centralwidget)
+        self.login_button.setObjectName("login_button")
+        self.horizontalLayout_8.addWidget(self.login_button)
         self.widget_7 = QtWidgets.QWidget(self.centralwidget)
         self.widget_7.setObjectName("widget_7")
         self.horizontalLayout_8.addWidget(self.widget_7)
@@ -173,7 +173,7 @@ class Ui_MainWindow(object):
         self.passwordLabel.setText(_translate("MainWindow", "Password"))
         self.label_7.setText(_translate("MainWindow", "Process"))
         self.label_6.setText(_translate("MainWindow", "Report"))
-        self.start_button.setText(_translate("MainWindow", "Login"))
+        self.login_button.setText(_translate("MainWindow", "Login"))
         self.label_4.setText(_translate("MainWindow", "Developed by: DIEGO LÓPEZ"))
 import gui.Images_rc
 

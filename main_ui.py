@@ -14,7 +14,12 @@ class MainApp(QtWidgets.QMainWindow, Ui_MainWindow):
     def __init__(self):
         super(self.__class__, self).__init__()
         self.setupUi(self)
+        self.login_button.clicked.connect(self.buttonClicked)
     
+    def buttonClicked(self):
+        username = self.usernameLineEdit.text().lower()
+        print(username)
+
     def closeEvent(self, event):
         reply = QtWidgets.QMessageBox.question(self, 'Message', 
             "Are you sure to quit?", QtWidgets.QMessageBox.Yes, QtWidgets.QMessageBox.No)
