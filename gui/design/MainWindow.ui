@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>600</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>SITU. Main GUI</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="Images.qrc">
+    <normaloff>:/images/infrastructure.png</normaloff>:/images/infrastructure.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:  rgb(255, 228, 228)rgb(237, 237, 237);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="0,0">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <property name="sizeConstraint">
+         <enum>QLayout::SetMinimumSize</enum>
+        </property>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,0,0,0">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <item>
+             <widget class="QLabel" name="label_10">
+              <property name="minimumSize">
+               <size>
+                <width>42</width>
+                <height>42</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>42</width>
+                <height>42</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border-image: url(:/images/infrastructure.png);</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_3">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Minimum</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_3">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>36</pointsize>
+                <weight>50</weight>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; color:#4597f7;&quot;&gt;SITU&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QWidget" name="widget_6" native="true">
+            <property name="minimumSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="Line" name="line">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Minimum</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QFrame" name="frame">
+          <property name="minimumSize">
+           <size>
+            <width>559</width>
+            <height>150</height>
+           </size>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QWidget" name="formLayoutWidget">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>30</y>
+             <width>281</width>
+             <height>54</height>
+            </rect>
+           </property>
+           <layout class="QFormLayout" name="formLayout">
+            <item row="0" column="0">
+             <widget class="QLabel" name="usernameLabel">
+              <property name="text">
+               <string>Username</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QLineEdit" name="usernameLineEdit"/>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="passwordLabel">
+              <property name="text">
+               <string>Password</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QLineEdit" name="passwordLineEdit"/>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Expanding</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <widget class="Line" name="line_4">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_7">
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Process</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QProgressBar" name="progressBar">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="layoutDirection">
+             <enum>Qt::LeftToRight</enum>
+            </property>
+            <property name="value">
+             <number>0</number>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_6">
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Report</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QTextEdit" name="results_window">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="MinimumExpanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_8">
+            <item>
+             <widget class="QWidget" name="widget_9" native="true"/>
+            </item>
+            <item>
+             <widget class="QPushButton" name="start_button">
+              <property name="text">
+               <string>Login</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QWidget" name="widget_7" native="true"/>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_4">
+            <property name="maximumSize">
+             <size>
+              <width>200</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Open Sans</family>
+              <pointsize>6</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Developed by: DIEGO LÓPEZ</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="Line" name="line_5">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="Images.qrc"/>
+ </resources>
+ <connections/>
+</ui>

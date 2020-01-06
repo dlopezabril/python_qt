@@ -1,11 +1,23 @@
 # Python PyQt
+PyQt Projcts examples
 
 ```shell
-python3 -m venv venv
-source venv/bin/activate
-python main_ui.py
-python main_form.py
+# Create a virtualenv
+python3 -m venv env
 ```
+
 ```shell
-pyuic5 -x layout.ui -o layout.py
+source ~/Workspace/python_qt/env/bin/activate
+```
+
+```shell
+# Libraries
+pip3 install pyqt5==5.13.2
+```
+
+```shell
+# Compile GUI
+./gui/design/compileGUI.sh
+# Run GUI
+python main_ui.py
 ```
