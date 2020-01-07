@@ -17,7 +17,7 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>SITU. Main GUI</string>
+   <string>SITU</string>
   </property>
   <property name="windowIcon">
    <iconset resource="Images.qrc">
@@ -29,7 +29,7 @@
   <widget class="QWidget" name="centralwidget">
    <layout class="QHBoxLayout" name="horizontalLayout_2">
     <item>
-     <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="0,0">
+     <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="0">
       <item>
        <layout class="QVBoxLayout" name="verticalLayout">
         <property name="sizeConstraint">
@@ -43,7 +43,7 @@
           <item>
            <layout class="QHBoxLayout" name="horizontalLayout">
             <item>
-             <widget class="QLabel" name="label_10">
+             <widget class="QLabel" name="iconLabel">
               <property name="minimumSize">
                <size>
                 <width>42</width>
@@ -81,7 +81,7 @@
              </spacer>
             </item>
             <item>
-             <widget class="QLabel" name="label_3">
+             <widget class="QLabel" name="titleLabel">
               <property name="enabled">
                <bool>false</bool>
               </property>
@@ -100,7 +100,7 @@
            </layout>
           </item>
           <item>
-           <widget class="QWidget" name="widget_6" native="true">
+           <widget class="QWidget" name="formWidget" native="true">
             <property name="minimumSize">
              <size>
               <width>20</width>
@@ -110,7 +110,7 @@
            </widget>
           </item>
           <item>
-           <widget class="Line" name="line">
+           <widget class="Line" name="firstLine">
             <property name="orientation">
              <enum>Qt::Horizontal</enum>
             </property>
@@ -135,7 +135,7 @@
          </layout>
         </item>
         <item>
-         <widget class="QFrame" name="frame">
+         <widget class="QFrame" name="frameForm">
           <property name="minimumSize">
            <size>
             <width>559</width>
@@ -148,35 +148,67 @@
           <property name="frameShadow">
            <enum>QFrame::Raised</enum>
           </property>
-          <widget class="QWidget" name="formLayoutWidget">
+          <widget class="QGroupBox" name="formGroupBox">
            <property name="geometry">
             <rect>
              <x>20</x>
-             <y>30</y>
+             <y>10</y>
              <width>281</width>
-             <height>54</height>
+             <height>111</height>
             </rect>
            </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+             <kerning>false</kerning>
+            </font>
+           </property>
+           <property name="title">
+            <string>Login</string>
+           </property>
            <layout class="QFormLayout" name="formLayout">
-            <item row="0" column="0">
+            <item row="0" column="1">
+             <spacer name="verticalSpacer_3">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>10</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="1" column="0">
              <widget class="QLabel" name="usernameLabel">
+              <property name="font">
+               <font>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
               <property name="text">
                <string>Username</string>
               </property>
              </widget>
             </item>
-            <item row="0" column="1">
-             <widget class="QLineEdit" name="usernameLineEdit"/>
+            <item row="1" column="1">
+             <widget class="QLineEdit" name="usernameEdit"/>
             </item>
-            <item row="1" column="0">
+            <item row="2" column="0">
              <widget class="QLabel" name="passwordLabel">
+              <property name="font">
+               <font>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
               <property name="text">
                <string>Password</string>
               </property>
              </widget>
             </item>
-            <item row="1" column="1">
-             <widget class="QLineEdit" name="passwordLineEdit"/>
+            <item row="2" column="1">
+             <widget class="QLineEdit" name="passwordEdit"/>
             </item>
            </layout>
           </widget>
@@ -208,10 +240,10 @@
            </widget>
           </item>
           <item>
-           <widget class="QLabel" name="label_7">
+           <widget class="QLabel" name="processLabel">
             <property name="font">
              <font>
-              <pointsize>9</pointsize>
+              <pointsize>10</pointsize>
               <weight>75</weight>
               <bold>true</bold>
              </font>
@@ -241,10 +273,10 @@
            </widget>
           </item>
           <item>
-           <widget class="QLabel" name="label_6">
+           <widget class="QLabel" name="reportLabel">
             <property name="font">
              <font>
-              <pointsize>9</pointsize>
+              <pointsize>10</pointsize>
               <weight>75</weight>
               <bold>true</bold>
              </font>
@@ -255,7 +287,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QTextEdit" name="results_window">
+           <widget class="QTextEdit" name="reportEdit">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="MinimumExpanding">
               <horstretch>0</horstretch>
@@ -270,7 +302,7 @@
              <widget class="QWidget" name="widget_9" native="true"/>
             </item>
             <item>
-             <widget class="QPushButton" name="login_button">
+             <widget class="QPushButton" name="loginButton">
               <property name="text">
                <string>Login</string>
               </property>
@@ -282,7 +314,7 @@
            </layout>
           </item>
           <item>
-           <widget class="QLabel" name="label_4">
+           <widget class="QLabel" name="developedbyLabel">
             <property name="maximumSize">
              <size>
               <width>200</width>
@@ -292,7 +324,7 @@
             <property name="font">
              <font>
               <family>Open Sans</family>
-              <pointsize>6</pointsize>
+              <pointsize>8</pointsize>
              </font>
             </property>
             <property name="text">
@@ -303,13 +335,6 @@
          </layout>
         </item>
        </layout>
-      </item>
-      <item>
-       <widget class="Line" name="line_5">
-        <property name="orientation">
-         <enum>Qt::Vertical</enum>
-        </property>
-       </widget>
       </item>
      </layout>
     </item>
